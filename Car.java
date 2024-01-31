@@ -1,10 +1,17 @@
+package sec08.exam;
 
 public class Car {
-	//필드 생성
-	String company = "현대자동차";
-	String model = "그랜저";
-	String color = "검정";
-	int maxSpeed = 350;
-	int speed; //초기화 안해도 객체 생성 시 자동으로 기본 초기값으로 설정
-			
+		//4개의 HkTire 타입 필드를 가짐
+		Tire frontLeftTire = new HkTire();
+		Tire frontRightTire = new HkTire();
+		Tire backLeftTire = new HkTire();
+		Tire backRightTire = new HkTire();
+	
+	void run() {
+		// 인터페이스에서 설명된 roll() 메소드 호출
+		frontLeftTire.roll();
+		frontRightTire.roll();
+		backLeftTire.roll();
+		backRightTire.roll();
+	}
 }
